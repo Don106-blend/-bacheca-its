@@ -82,5 +82,4 @@ function main() {
 const lanciatoDirettamente =
   process.argv[1] !== undefined && import.meta.url === pathToFileURL(process.argv[1]).href;
 
- 
- 
+if (lanciatoDirettamente) main();
